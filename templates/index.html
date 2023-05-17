@@ -8,6 +8,7 @@
     <title>Calculator</title>
 </head>
 <body>
+    {% include "header.html" %}
     <div class="heading">
         Calcutator
     </div>
@@ -15,21 +16,23 @@
         <form method="post">
             {% csrf_token %}
             <label>Value 1</label>
-            <input type="text" name="num1" class="form-control"/>
+            <input type="text" name="num1" id="numzone1"/>
             <label>Operator</label>
-            <select name="opr">
+            <select name="opr" class="select">
                 <option value="+">+</option>
                 <option value="-">-</option>
                 <option value="*">*</option>
                 <option value="/">/</option>
             </select>
             <label>Value 2</label>
-            <input type="text" name="num2" class="form-control"/>
+            <input type="text" name="num2" class="numzone2"/>
             <button type="submit">Calculate</button>
             <label>Output</label>
-            <input type="text" name="Output" class="form-control"/>
+            <input type="text" name="Output" class="numzone3"/>
 
         </form>
     </div>
+    {% include "footer.html" %}
+    <script src="/static/Function.js"></script>
 </body>
 </html>
