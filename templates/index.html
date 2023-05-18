@@ -8,7 +8,12 @@
     <title>Calculator</title>
 </head>
 <body>
-    {% include "header.html" %}
+  {% extends 'base.html' %}
+
+
+  {% block content %}
+
+
     <div class="heading">
         Calcutator
     </div>
@@ -28,11 +33,12 @@
             <input type="text" name="num2" class="numzone2"/>
             <button type="submit">Calculate</button>
             <label>Output</label>
-            <input type="text" name="Output" class="numzone3"/>
+            <input type="text" value="{{c}}" name="Output" class="numzone3"/>
 
         </form>
     </div>
-    {% include "footer.html" %}
+
+{% endblock %}
     <script src="/static/Function.js"></script>
 </body>
 </html>

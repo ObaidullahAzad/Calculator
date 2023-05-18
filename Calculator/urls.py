@@ -19,5 +19,9 @@ from Calculator import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.homePage),
+    path('',views.homePage,name='home'),
+    path('about/' , views.about,name='about'),
+    path('services/' , views.about,name='services'),
+    path('Team/' , views.about,name='Team'),
+    path('marksheet/' , views.marksheet,name='about'),
 ]

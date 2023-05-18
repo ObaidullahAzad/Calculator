@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block  content%}
+<form method="post">
+    {% csrf_token %}
+<label>Value 1</label>
+<input type="text" name="subject1" id="subject1"/> 
+<label>Subject 1</label>
+<input type="text" name="subject2" id="subject1"/> 
+<label>Subject 2</label>
+<input type="text" name="subject3" id="subject1"/> 
+<label>Subject 3</label>
+<input type="text" name="subject4" id="subject1"/>
+ <label>Subject 4</label>
+<input type="text" name="subject5" id="subject1"/>
+<button type="submit">Calculate</button>
+<label>Percentage</label>
+<input type="text" value="" name="per" id="subject1"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+
+
+{% endblock%}
